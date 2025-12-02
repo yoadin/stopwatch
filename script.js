@@ -1,7 +1,9 @@
 
 const startStopButton = document.getElementById('startStop');
 const stopwatchDisplay = document.getElementById('stopwatch');
-// const reset = document.getElementById('reset');
+const resetButton = document.getElementById('reset');
+
+
 let isRunning = false;
 let seconds = 0;
 let timer;
@@ -36,6 +38,14 @@ startStopButton.addEventListener('click', () => {
         stopTimer();
     }
 });
+
+resetButton.addEventListener('click', ()=>{
+    stopTimer();
+    seconds = 0;
+    stopwatchDisplay.textContent = formatTime(seconds);
+    startStopButton.textContent = 'Start';
+    isRunning = false;
+})
 
 
 // Write JavaScript code here
