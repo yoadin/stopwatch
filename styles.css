@@ -8,4 +8,17 @@ body{
     justify-content: center;
     
 }
+
+.stopwatch-container{
+    text-align: center;   
+}
+
+#stopwatch{
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: rgb(237, 14, 43);
+    border: 1px solid rgb(97, 21, 173);
+    border-radius: 5px;
+    padding: 10px;
+}
 /* Write CSS code here *
